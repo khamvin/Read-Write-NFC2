@@ -81,7 +81,8 @@ public class MainActivity extends Activity {
         IntentFilter tagDetected = new IntentFilter(NfcAdapter.ACTION_TAG_DISCOVERED);
         tagDetected.addCategory(Intent.CATEGORY_DEFAULT);
         writeTagFilters = new IntentFilter[] { tagDetected };
-    }
+
+    }   // Main Method
 
 
     /******************************************************************************
@@ -197,5 +198,6 @@ public class MainActivity extends Activity {
     private void WriteModeOff(){
         writeMode = false;
         nfcAdapter.disableForegroundDispatch(this);
-    }
-}
+    }   // WriteModeOff
+
+}   // Main Class
